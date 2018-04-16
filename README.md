@@ -9,6 +9,7 @@ All scripts should work in python3. Python2 will do some weird encodings, I reco
 
 Adding this here to prevent too much clutter in the commit messages.
 Here is a quick list of what tests I've done:
+
     With sumantra's code, orig dict:  	dev bleu 1.7
     With sumantra's code, copied dict: 	dev bleu 1.4
     (Sumantra's .vi and .en files do not match!)
