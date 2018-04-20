@@ -23,3 +23,19 @@ Here is a quick list of what tests I've done:
     Fixed concat, removed '|', copied dict:		dev bleu 10.7
     
 Next step is to start playing with the dictonary
+
+-Eric on 4/19
+After much pain and frustration, I think I have createNewVocab.py in a good state. It starts with a base vocab from the origonal project, 
+then adds any new words from the .en and .vi files. It strips out all puncuation, this may or may not be a good thing. Maybe have it add
+both puncuation and unpuncuated words?
+
+Note that it takes a while to run, this is due to me keeping word order AND preventing duplicate words from entering the file (which causes errors)
+
+New scores to add:
+
+    Fixed concat, .en dict removed pun:	    dev bleu 18.1
+
+    Fixed concat, full dict removed pun:	dev bleu 19.4 (this is the current build!)
+
+    
+Strip '_' from input next? I see that the NN might deal with that already. See my notes in the relevant issue.
