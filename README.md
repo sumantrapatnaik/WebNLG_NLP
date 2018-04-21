@@ -1,4 +1,10 @@
 # WebNLG_NLP
+
+-Pakhi 4/21
+Hi, Removed "_" from mTriples, created new dictionary and converted text to lowercase.
+    BLEU dev 23.3, BLEU train 1.3
+
+
 Hi, I added all the initial files except the vocab.
 
 -Eric on 4/15
@@ -21,11 +27,11 @@ Here is a quick list of what tests I've done:
 
     Fixed concat, left '|' in, copied dict:		dev bleu 10.6
     Fixed concat, removed '|', copied dict:		dev bleu 10.7
-    
+
 Next step is to start playing with the dictonary
 
 -Eric on 4/19
-After much pain and frustration, I think I have createNewVocab.py in a good state. It starts with a base vocab from the origonal project, 
+After much pain and frustration, I think I have createNewVocab.py in a good state. It starts with a base vocab from the origonal project,
 then adds any new words from the .en and .vi files. It strips out all puncuation, this may or may not be a good thing. Maybe have it add
 both puncuation and unpuncuated words?
 
@@ -37,5 +43,5 @@ New scores to add:
 
     Fixed concat, full dict removed pun:	dev bleu 19.4 (this is the current build!)
 
-    
+
 Strip '_' from input next? I see that the NN might deal with that already. See my notes in the relevant issue.

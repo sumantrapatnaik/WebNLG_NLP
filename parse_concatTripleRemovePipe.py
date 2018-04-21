@@ -23,8 +23,8 @@ def parse(train_dev_test):
                 mTripleConcat += (mTriple.text) + " | "
             
             for lex in child.iter('lex'):
-                englishFile.write(lex.text + '\n')
-                tupleFile.write(mTripleConcat[:-3].replace(" | ", " ") + '\n') 
+                englishFile.write(lex.text.lower() + '\n')
+                tupleFile.write(mTripleConcat[:-3].replace(" | ", " ").replace("_"," ").lower() + '\n') 
             
     englishFile.close()
     tupleFile.close()    
